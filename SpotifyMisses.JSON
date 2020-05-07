@@ -1,0 +1,243 @@
+[
+	{
+		"key":"2010",
+		"values":[
+			{
+				"categories":"Danceability",
+				"year":"Years 2010-2019",
+				"value":0.49469224757736774
+			},
+			{
+				"categories":"Energy",
+				"year":"Years 2010-2019",
+				"value":0.6531456370740875
+			},
+			{
+				"categories":"Speechiness",
+				"year":"Years 2010-2019",
+				"value":0.08851222256955296
+			},
+			{
+				"categories":"Acousticness",
+				"year":"Years 2010-2019",
+				"value":0.27168408015317314
+			},
+			{
+				"categories":"Instrumentalness",
+				"year":"Years 2010-2019",
+				"value":0.3245284124351366
+			},
+			{
+				"categories":"Liveness",
+				"year":"Years 2010-2019",
+				"value":0.20710175054704585
+			},
+			{
+				"categories":"Valence",
+				"year":"Years 2010-2019",
+				"value":0.3936555173491713
+			}
+		]
+	},
+	{
+		"key":"2000",
+		"values":[
+			{
+				"categories":"Danceability",
+				"year":"Years 2000-2009",
+				"value":0.45581249999999995
+			},
+			{
+				"categories":"Energy",
+				"year":"Years 2000-2009",
+				"value":0.6744140803814715
+			},
+			{
+				"categories":"Speechiness",
+				"year":"Years 2000-2009",
+				"value":0.08693436648501368
+			},
+			{
+				"categories":"Acousticness",
+				"year":"Years 2000-2009",
+				"value":0.28073962902588545
+			},
+			{
+				"categories":"Instrumentalness",
+				"year":"Years 2000-2009",
+				"value":0.29297628659400543
+			},
+			{
+				"categories":"Liveness",
+				"year":"Years 2000-2009",
+				"value":0.28073962902588545
+			},
+			{
+				"categories":"Valence",
+				"year":"Years 2000-2009",
+				"value":0.41073351498637606
+			}
+		]
+	},
+	{
+		"key":"1990",
+		"values":[
+			{
+				"categories":"Danceability",
+				"year":"Years 1990-1999",
+				"value":0.48501728260869537
+			},
+			{
+				"categories":"Energy",
+				"year":"Years 1990-1999",
+				"value":0.546950468478262
+			},
+			{
+				"categories":"Speechiness",
+				"year":"Years 1990-1999",
+				"value":0.0698398913043478
+			},
+			{
+				"categories":"Acousticness",
+				"year":"Years 1990-1999",
+				"value":0.412928373474638
+			},
+			{
+				"categories":"Instrumentalness",
+				"year":"Years 1990-1999",
+				"value":0.2899586261920288
+			},
+			{
+				"categories":"Liveness",
+				"year":"Years 1990-1999",
+				"value":0.21504811594202897
+			},
+			{
+				"categories":"Valence",
+				"year":"Years 1990-1999",
+				"value":0.49375384057971045
+
+			}
+		]
+	},
+	{
+		"key":"1980",
+		"values":[
+			{
+				"categories":"Danceability",
+				"year":"Years 1980-1989",
+				"value":0.5040728430804864
+			},
+			{
+				"categories":"Energy",
+				"year":"Years 1980-1989",
+				"value":0.563043435437175
+			},
+			{
+				"categories":"Speechiness",
+				"year":"Years 1980-1989",
+				"value":0.0691773885350319
+			},
+			{
+				"categories":"Acousticness",
+				"year":"Years 1980-1989",
+				"value":0.381554789027215
+			},
+			{
+				"categories":"Instrumentalness",
+				"year":"Years 1980-1989",
+				"value":0.25128711124493347
+			},
+			{
+				"categories":"Liveness",
+				"year":"Years 1980-1989",
+				"value":0.21939823393167346
+			},
+			{
+				"categories":"Valence",
+				"year":"Years 1980-1989",
+				"value":0.5187832339316726
+			}
+		]
+	},
+	{
+		"key":"1970",
+		"values":[
+			{
+				"categories":"Danceability",
+				"year":"Years 1970-1979",
+				"value":0.48063087818696915
+			},
+			{
+				"categories":"Energy",
+				"year":"Years 1970-1979",
+				"value":0.47102409992274075
+			},
+			{
+				"categories":"Speechiness",
+				"year":"Years 1970-1979",
+				"value":0.07096494978109724
+			},
+			{
+				"categories":"Acousticness",
+				"year":"Years 1970-1979",
+				"value":0.5274329479963956
+			},
+			{
+				"categories":"Instrumentalness",
+				"year":"Years 1970-1979",
+				"value":0.2759822458485708
+			},
+			{
+				"categories":"Liveness",
+				"year":"Years 1970-1979",
+				"value":0.20629546742209626
+			},
+			{
+				"categories":"Valence",
+				"year":"Years 1970-1979",
+				"value":0.5271339866082929
+			}
+		]
+	},
+	{
+		"key":"1960",
+		"values":[
+			{
+				"categories":"Danceability",
+				"year":"Years 1960-1969",
+				"value":0.45375570469798565
+			},
+			{
+				"categories":"Energy",
+				"year":"Years 1960-1969",
+				"value":0.3792668581346903
+			},
+			{
+				"categories":"Speechiness",
+				"year":"Years 1960-1969",
+				"value":0.07548822031937018
+			},
+			{
+				"categories":"Acousticness",
+				"year":"Years 1960-1969",
+				"value":0.6943235528303624
+			},
+			{
+				"categories":"Instrumentalness",
+				"year":"Years 1960-1969",
+				"value":0.2495949814001384
+			},
+			{
+				"categories":"Liveness",
+				"year":"Years 1960-1969",
+				"value":0.2078990742883592
+			},
+			{
+				"categories":"Valence",
+				"year":"Years 1960-1969",
+				"value":0.48650182828049
+			}
+		]
+	}
+]
