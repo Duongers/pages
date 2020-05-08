@@ -22,6 +22,7 @@
 		</p>
 	</section>
 	<p>
+
 	</p>
 	<footer>
 		<a href="#banner" class="button style2 scrolly">Audio feature definitions</a>
@@ -30,7 +31,6 @@
 	<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
 	<title>Spotify Data Radar Chart</title>
 	<meta charset="utf-8" />
-	<br><img src="Radar Chart legend.png" alt="legend" style = "width:200px; height:175px;">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
@@ -60,8 +60,19 @@
 		}
 	</style>
 </head>
-<body>
+<head>
+	<section id="header">
+<header>
+	<p>
+		The following visualization is a radar chart that illustrates the properties
+		of "hit" songs by decade from the 1960s to the 2010s
+	</p>
+</header>
+</head>
+	<div id="radar"></div>
+
 <div class="radarChart"></div>
+
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/jquery.scrolly.min.js"></script>
 <script src="assets/js/jquery.poptrox.min.js"></script>
@@ -75,8 +86,8 @@
 	//////////////////////// Set-Up //////////////////////////////
 	//////////////////////////////////////////////////////////////
 
-	var margin = {top: 100, right: 200, bottom: 100, left: 200},
-			legendPosition = {x: 10, y: 500},
+	var margin = {top: 100, right: 350, bottom: 100, left: 350},
+			legendPosition = {x: 0, y: 100},
 			width = Math.min(700, window.innerWidth - 10)-200,
 			//width = Math.min(1000, window.innerWidth) - margin.left - margin.right,
 			height = Math.min(width, window.innerHeight-200);
@@ -107,9 +118,93 @@
 	d3.json("spotifyHits.json", function(error, data){
 		RadarChart(".radarChart", data, radarChartOptions);
 	});
-</script>
-	
-<section id="banner">
+	</script>
+
+	<!-- Load d3.js -->
+	<script src="https://d3js.org/d3.v4.js"></script>
+
+	<!-- Function for radial charts -->
+	<script src="https://cdn.jsdelivr.net/gh/holtzy/D3-graph-gallery@master/LIB/d3-scale-radial.js"></script>
+
+
+	<head>
+		<section id="header">
+	<header>
+		<p>
+			The following visualization is a scatterplot that compares the lengths
+			of songs by decade from the 1960s to the 2010s. The y-axis is measured
+			in minutes and the decades are in the x-axis.
+		</p>
+	</header>
+	</head>
+	<!-- Create a div where the graph will take place -->
+	<div id="my_dataviz"></div>
+	<div class="dataviz"></div>
+	<script src="dataviz.js"></script>
+
+	<script>
+	// set the dimensions and margins of the graph
+
+	var margin = {top: 100, right: 500, bottom: 25, left: 530},
+	    width = 810, //- margin.left - margin.right,
+	    height = 650; //- margin.top - margin.bottom;
+			//width = Math.min(900, window.innerWidth - 10)-200,
+			//height = Math.min(width, window.innerHeight-200);
+
+
+	// append the svg object to the body of the page
+	var svg = d3.select("#my_dataviz")
+	  .append("svg")
+	    .attr("width", width + margin.left + margin.right)
+	    .attr("height", height + margin.top + margin.bottom)
+	  .append("g")
+	    .attr("transform",
+		  "translate(" + margin.left + "," + margin.top + ")");
+
+	var datavizoptions = {
+				width: width,
+				height: height
+			};
+	//Read the data
+
+	d3.csv("spotifyPlaylistFixed2.csv", function(data) {
+		DataViz(data, datavizoptions);
+	})
+
+	</script>
+
+	<!-- Load d3.js -->
+	<!--<script src="https://d3js.org/d3.v4.js"></script>-->
+
+	<!-- Create a div where the circle will take place -->
+	<!--<div id="dataviz_basicZoom"></div>
+	<script>
+	// append the svg object to the body of the page
+	var svg = d3.select("#dataviz_basicZoom")
+	  .append("svg")
+	    .attr("width",  910)
+	    .attr("height",  800)
+	    .call(d3.zoom().on("zoom", function () {
+	       svg.attr("transform", d3.event.transform)
+	    }))
+	  .append("g")
+	svg
+	  .append("circle")
+	    .attr("cx", 0)
+	    .attr("cy", 0)
+	    .attr("r", 40)
+	    .style("fill-opacity", 0)
+	    //.style("fill", "#ffffff")
+		   //68b2a1")
+	</script>-->
+	<p>
+	<figure>
+	<img src="Hits&Misses.png" alt="Hits&Misses" style = "width:1750px; height:900px;">
+	<figcaption>Comparison of audio features between hit and miss songs based on target indicator from dataset.</figcaption>
+	<figure>
+	</p>
+
+	<section id="banner">
 	<p>
 		<i>Danceability</i> - Danceability describes how suitable
 		a track is for dancing based on a combination of
@@ -162,14 +257,9 @@
 		or layered, including such cases as rap music. Values below 0.33
 		most likely represent music and other non-speech-like tracks.
 	</p>
-	<p>
-	<figure>
-	<img src="Hits&Misses.png" alt="Hits&Misses" style = "width:1750px; height:900px;">
-	<figcaption>Comparison of audio features between hit and miss songs based on target indicator from dataset.</figcaption>	
-	<figure>
-	</p>
-	
-</section>
+	</section>
+
+	<div id="writeup"></div>
 <article style="background-color: #35b88f;" class="container box style3">
 	<header>
 		<h2>Write-Up</h2>
@@ -203,7 +293,7 @@
 			text on the page, debugging, and transforming the dataset
 			using Trifacta. The most time-consuming part was figuring
 			out which dataset and visualization to use. We spent
-			around ~20 hours in total to complete the assignment from
+			around 30 hours in total to complete the assignment from
 			start to finish.</p>
 	</header>
 </article>
